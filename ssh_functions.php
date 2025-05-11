@@ -4,9 +4,9 @@ require __DIR__ . '/vendor/autoload.php';
 use phpseclib3\Net\SSH2;
 
 function sshConnect() {
-    $host = 'IP_VPS_ANDA';              // Ganti IP VPS Anda
+    $host = '13.212.234.66';              // Ganti IP VPS Anda
     $rootUser = 'root';
-    $rootPassword = 'PASSWORD_ROOT_VPS'; // Ganti password root VPS Anda
+    $rootPassword = 'kopral13245'; // Ganti password root VPS Anda
 
     $ssh = new SSH2($host);
     if (!$ssh->login($rootUser, $rootPassword)) {
